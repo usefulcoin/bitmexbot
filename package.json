@@ -4,7 +4,7 @@
   "description": "bitmex market maker bot",
   "main": "bitmexbot.js",
   "dependencies": {
-    "aws-sdk": "^2.493.0",
+    "aws-sdk": "^2.495.0",
     "node-fetch": "^2.6.0",
     "qs": "^6.7.0",
     "ws": "^7.1.0"
@@ -14,5 +14,16 @@
     "test": "ls"
   },
   "author": "usefulcoin",
-  "license": "MIT"
+  "license": "MIT",
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/usefulcoin/bitmexbot.git"
+  },
+  "bugs": {
+    "url": "https://github.com/usefulcoin/bitmexbot/issues"
+  },
+  "homepage": "https://github.com/usefulcoin/bitmexbot#readme"
 }

@@ -9,9 +9,9 @@
   const secret = eval("process.env." + bitmexaccount.toUpperCase() + "_USEFULCOIN_COM_API_SECRET") /* BitMEX API secret */
 
   // make requests.
-  let openpositioninformation = await makerestapirequest ( key, secret, 'GET', '/api/v1/position', { 'filter': {'isOpen': true, 'symbol': financialinstrument} }  )
+  let neworderinformation = await makerestapirequest ( key, secret, 'GET', '/api/v1/order', { 'filter': {'symbol': financialinstrument, 'ordStatus': 'New'} }  )
   // made requests.
 
-  console.log ( openpositioninformation )
+  console.log ( neworderinformation )
 
 })()
