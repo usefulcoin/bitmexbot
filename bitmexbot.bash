@@ -18,4 +18,4 @@ equityreturn=${equityreturn:-0.05}
 read -p "On what mobile number may I message you if your dreams come true? [+15104594120]: " contactnumber
 contactnumber=${contactnumber:-+15104594120}
 
-while (true) ; do node bitmexbot.js $riskratio $account $financialposition $financialinstrument $equityreturn $contactnumber ; sleep 5 ; done
+setsid `while (true) ; do node /home/ubuntu/${account}/bitmexbot.js $riskratio $account $financialposition $financialinstrument $equityreturn $contactnumber > /tmp/bitmexbot-${account}-${financialinstrument}.log 2>&1 < /tmp/bitmexbot-${account}-${financialinstrument}.log ; sleep 5 ; done` &

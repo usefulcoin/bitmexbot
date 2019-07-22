@@ -114,7 +114,7 @@ function getoffsetdetails ( assetreturn, orderdetails ) { // determine offset de
   
       }
   
-      await delay(5000) /* wait 5000 milliseconds for the order to fill */
+      await delay(25000) /* wait 25000 milliseconds for the order to fill */
       let neworder = await makerestapirequest ( key, secret, 'GET', '/api/v1/order', { 'filter': {'orderID': postedorder.orderID} } ) /* update posted order object */
       if ( neworder[0].ordStatus === 'Filled' ) { 
 	console.log( 'Order ' + neworder[0].orderID + ' is now: "' + neworder[0].ordStatus + '". Submitting offset...' ) /* report status */
