@@ -7,8 +7,8 @@ Instructions for configuring the BitMex Market Maker Bot ("**bitmexbot**") are s
 Store account credentials for the BitMex account in dotfile that you export to the environment upon login, for example:
 
 ```bash
-usefulcoin_api_key=XXXXXXXXXXXXXXXXX
-usefulcoin_api_secret=XXXXXXXXXXXXXX
+USEFULCOIN_API_KEY=XXXXXXXXXXXXXXXXX
+USEFULCOIN_API_SECRET=XXXXXXXXXXXXXX
 ```
 
 ## Exporting Credentials
